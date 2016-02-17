@@ -18,6 +18,5 @@ function projectLiked(e) { 
     e.preventDefault();
     // In an event handler, $(this) refers to      
     // the object that triggered the event      
-    $(this).css("background-color", "#0000ff");
     ga("send", "event", 'like', 'click');
 }
