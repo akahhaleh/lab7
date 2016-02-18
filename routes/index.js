@@ -7,7 +7,7 @@ var projects = require('../projects.json');
 exports.view = function(req, res){
 	random_num = Math.random();
 	console.log(random_num);
-	if (random_num > 0.5){
+	if (random_num >= 0){
 		projects["grid"] = false;
   		res.render('index', projects);
 	} else {
